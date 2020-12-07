@@ -1,8 +1,11 @@
 {
   "name": "with-redux-saga",
+  "homepage": "https://rajansth77.github.io/quiz",
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -19,6 +22,7 @@
     "axios": "^0.19.2",
     "copy-to-clipboard": "^3.3.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "immutable": "^4.0.0-rc.12",
     "js-cookie": "^2.2.1",
     "next": "latest",
