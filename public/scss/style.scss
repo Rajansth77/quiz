@@ -1,0 +1,48 @@
+@import "./sass/fonts";
+@import "./sass/colors";
+@import "./sass/all";
+
+.error {
+  position: relative;
+  .milk-404 {
+    max-height: 60vh;
+  }
+
+  #mouth-frown {
+    visibility: hidden;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  button {
+    background-color: $primary;
+    color: $white;
+    transition: 0.2s ease-in;
+    width: 25% !important;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    i {
+      margin-right: 0.6rem;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .error {
+    button {
+      width: 60% !important;
+    }
+  }
+}
